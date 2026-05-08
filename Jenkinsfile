@@ -4,12 +4,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/Deepika-cp/hospital-booking-system.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 bat 'docker build -t hospital-app .'
