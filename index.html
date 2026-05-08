@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Appointment Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Hospital Appointment Booking System</h1>
+
+        <form onsubmit="bookAppointment(event)">
+
+            <input type="text" placeholder="Patient Name" required>
+
+            <input type="date" required>
+
+            <select required>
+                <option>Select Doctor</option>
+                <option>Dr. Sharma</option>
+                <option>Dr. Priya</option>
+                <option>Dr. Kumar</option>
+            </select>
+
+            <button type="submit">Book Appointment</button>
+            <p id="message"></p>
+
+        </form>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
